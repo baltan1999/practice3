@@ -4,24 +4,24 @@
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.7/aframe/build/aframe-ar.js"></script>
   <body style='margin : 0px; overflow: hidden;'>
     <a-assets>
-	    <img id="wao" src="スライド1.PNG">
+	    <img id="setsumei" src="スライド1.PNG">
 	  </a-assets>
 	  <!-- デバッグ用の画面表示、VR用のボタンをそれぞれ非表示に -->
     <a-scene embedded arjs="debugUIEnabled:false;" vr-mode-ui="enabled: false">
       <!-- 今回作成した『.patt』ファイルを読み込む -->
       <a-marker type='pattern' url='pattern-marker.patt'>
-	      <a-video src="#ar-video" width="2.6" height="1.4" position="0 0 0" rotation="270 0 0" play="true"></a-video>
+	      <a-video src="#setsumei" width="2.6" height="1.4" position="0 0 0" rotation="270 0 0" play="true"></a-video>
       </a-marker>
       <a-entity camera>
 	      <!-- idで画像を指定。x軸回りで-90度回転 -->
-      <a-image src="#wao" width="2" height="2" rotation="0 180 0"></a-image>
+      <a-image src="#setsumei" width="2" height="2" rotation="0 180 0"></a-image>
 	    
 	    </a-entity>
     </a-scene>
     
     <script>
       window.addEventListener('click', function () {
-      var v = document.querySelector('#ar-video');
+      var v = document.querySelector('#setsumei');
       v.play();
       });
     </script>
