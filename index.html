@@ -12,7 +12,11 @@
       <a-marker type='pattern' url='pattern-marker.patt'>
 	      <a-video src="#ar-video" width="2.6" height="1.4" position="0 0 0" rotation="270 0 0" play="true"></a-video>
       </a-marker>
-      <a-entity camera></a-entity>
+      <a-entity camera>
+	      <!-- idで画像を指定。x軸回りで-90度回転 -->
+      <a-image src="#wao" width="2" height="2" rotation="-90 0 0"></a-image>
+	    
+	    </a-entity>
     </a-scene>
     
     <script>
